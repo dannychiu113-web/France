@@ -64,10 +64,10 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 14px;
-  margin: 16px auto 0;
-  max-width: 760px;
+  gap: 12px;
+  padding: 18px 22px;
+  margin: 18px auto 0;
+  max-width: 860px;
   background: rgba(255, 250, 242, 0.86);
   border: 1px solid #d8c3a5;
   border-radius: 999px;
@@ -76,8 +76,9 @@ nav ul {
 
 nav a {
   display: inline-block;
-  padding: 8px 14px;
+  padding: 10px 18px;
   color: #7a2f2f;
+  font-size: 1.05rem;
   font-weight: 700;
   text-decoration: none;
   border-radius: 999px;
