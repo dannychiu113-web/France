@@ -7,7 +7,6 @@ body {
   font-family: Arial, sans-serif;
   color: #2f4f4f;
   padding: 20px;
-  position: relative;
   overflow-x: hidden;
   min-height: 100vh;
   background:
@@ -28,7 +27,7 @@ header {
   text-align: center;
   padding: 20px;
   background: linear-gradient(135deg, #7a2f2f, #b24b3d);
-  color: #ffffff;
+  color: #fff;
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(107, 79, 79, 0.18);
 }
@@ -40,7 +39,6 @@ h1 {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
   display: flex;
   justify-content: space-around;
   background-color: #8b5e3c;
@@ -53,7 +51,6 @@ nav a {
   color: #fffaf2;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.1rem;
 }
 
 nav a:hover,
@@ -64,10 +61,6 @@ nav a:focus-visible {
 
 nav a:visited {
   color: #f8e6c8;
-}
-
-nav a:link {
-  color: #fffaf2;
 }
 
 .section:hover,
@@ -90,7 +83,6 @@ nav a:link {
 }
 
 .section {
-  max-width: none;
   margin: 0;
   padding: 16px;
   background: rgba(255, 250, 242, 0.94);
