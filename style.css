@@ -5,15 +5,15 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  color: #1a202c;
+  background-color: #f7f3ea;
+  color: #2f4f4f;
   padding: 20px;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background-color: #002395;
+  background-color: #6b4f4f;
   color: #ffffff;
   border-radius: 8px;
 }
@@ -28,14 +28,14 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: space-around;
-  background-color: #ed2939;
+  background-color: #8b5e3c;
   padding: 12px;
   border-radius: 8px;
   margin-top: 15px;
 }
 
 nav a {
-  color: white;
+  color: #fffaf2;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.1rem;
@@ -45,18 +45,31 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.section {
-  max-width: 800px;
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1100px;
   margin: 20px auto;
+}
+
+.section {
+  max-width: none;
+  margin: 0;
   padding: 16px;
-  background-color: #ffffff;
+  background-color: #fffaf2;
   border-radius: 8px;
-  border: 1px solid #cbd5e1;
+  border: 2px solid #8b5e3c;
+  box-shadow: 0 2px 6px rgba(107, 79, 79, 0.12);
+}
+
+.section.full {
+  grid-column: 1 / -1;
 }
 
 h2 {
   margin-top: 0;
-  color: #002395;
+  color: #6b4f4f;
 }
 
 img {
@@ -72,25 +85,51 @@ ul, ol {
   line-height: 1.6;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 10px;
+.section ul {
+  padding-left: 18px;
 }
 
-th, td {
-  border: 1px solid #cbd5e1;
-  padding: 10px;
-  text-align: left;
+.section li {
+  margin-bottom: 8px;
 }
 
-th {
-  background-color: #002395;
-  color: white;
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.info-card {
+  background-color: #fdf7eb;
+  border: 1px solid #d8c3a5;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.info-card h3 {
+  margin: 0 0 8px;
+  color: #6b4f4f;
+  font-size: 1rem;
+}
+
+.info-card p {
+  margin: 0;
+  color: #2f4f4f;
 }
 
 footer {
   text-align: center;
   margin-top: 30px;
   padding: 10px;
+}
+
+@media (max-width: 760px) {
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
 }
