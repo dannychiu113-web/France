@@ -41,8 +41,25 @@ nav a {
   font-size: 1.1rem;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus-visible {
   text-decoration: underline;
+  color: #ffe4b5;
+}
+
+nav a:visited {
+  color: #f8e6c8;
+}
+
+.section:hover,
+.info-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(107, 79, 79, 0.18);
+}
+
+.section:nth-child(even) {
+  background-color: #fef9f0;
 }
 
 .page-grid {
@@ -116,6 +133,35 @@ ul, ol {
 .info-card p {
   margin: 0;
   color: #2f4f4f;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+thead {
+  background-color: #6b4f4f;
+  color: #ffffff;
+}
+
+th, td {
+  border: 1px solid #d8c3a5;
+  padding: 10px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fdf7eb;
+}
+
+.map-image {
+  display: block;
+  width: min(100%, 600px);
+  margin: 15px auto 0;
+  border: 3px solid #8b5e3c;
+  border-radius: 10px;
 }
 
 footer {
