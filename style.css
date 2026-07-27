@@ -5,17 +5,32 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f7f3ea;
   color: #2f4f4f;
   padding: 20px;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(255, 244, 222, 0.9), rgba(255, 250, 242, 0.9)),
+    url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1600&q=80') center/cover fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.35), transparent 30%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background-color: #6b4f4f;
+  background: linear-gradient(135deg, #7a2f2f, #b24b3d);
   color: #ffffff;
   border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(107, 79, 79, 0.18);
 }
 
 h1 {
@@ -78,10 +93,11 @@ nav a:link {
   max-width: none;
   margin: 0;
   padding: 16px;
-  background-color: #fffaf2;
+  background: rgba(255, 250, 242, 0.94);
   border-radius: 8px;
   border: 2px solid #8b5e3c;
   box-shadow: 0 2px 6px rgba(107, 79, 79, 0.12);
+  backdrop-filter: blur(3px);
 }
 
 .section.full {
