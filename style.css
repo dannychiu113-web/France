@@ -264,3 +264,20 @@ footer {
   background-color: #7a2f2f;
   color: #fffaf5;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff4de;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b24b3d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a2f2f;
+}
