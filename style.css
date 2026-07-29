@@ -259,3 +259,8 @@ footer {
     padding: 14px 16px;
   }
 }
+
+::selection {
+  background-color: #7a2f2f;
+  color: #fffaf5;
+}
