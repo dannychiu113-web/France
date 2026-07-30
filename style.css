@@ -281,3 +281,66 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #7a2f2f;
 }
+
+header {
+  animation: headerDrop 0.8s ease-out;
+}
+
+@keyframes headerDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav.main-nav {
+  animation: navFade 0.8s ease-out;
+}
+
+@keyframes navFade {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section {
+  animation: sectionAppear 0.7s ease-out;
+  transition: transform 0.25s;
+}
+
+@keyframes sectionAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section:hover {
+  transform: translateY(-4px);
+}
+
+.info-card {
+  transition: transform 0.25s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+img {
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
