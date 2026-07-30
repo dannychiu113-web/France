@@ -344,16 +344,3 @@ img {
 img:hover {
   transform: scale(1.02);
 }
-
-header {
-  animation: headerGlow 3s ease-in-out infinite alternate;
-}
-
-@keyframes headerGlow {
-  from {
-    box-shadow: 0 10px 24px rgba(98, 56, 24, 0.2);
-  }
-  to {
-    box-shadow: 0 10px 35px rgba(178, 75, 61, 0.4);
-  }
-}
